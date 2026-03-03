@@ -1,0 +1,20 @@
+Transformation Rules:
+1. Shift
+    - Each word has its letters shifted by a distinct amount. 
+    - Think of these shifts as moving "forward" in the alphabet by the
+    shift amount.
+    - ex. "Abc Xyz" shifted by [1,2] = "Bcd "
+2. Character swap
+    - Each word has at least one character swapped with a different word
+    - Space characters are not swapped (Number of words and word length are unchanged)
+3. Word swap
+    - Between 1 and 3 words have their positions swapped with other words
+4. Word Merge
+    - Between 1 and 3 words will be merged with the next word in the sequence
+
+Other Constraints:
+1. Merge-Swap rule:
+    - If merging occurs before word swapping, at least one of the merged words will be
+    swapped
+    - If swapping occurs before merging, at least one of the swapped words will be merged
+2. Each transformation is applied exactly once to the original text

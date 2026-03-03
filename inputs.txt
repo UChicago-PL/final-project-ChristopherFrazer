@@ -1,0 +1,10 @@
+Invalid Input. Valid Inputs are:
+
+1 - Guess shift transformation
+2 - Guess characrer swap transformation
+3 - Guess word swap transformation
+4 - Guess word merge transformarion
+transformations - View transformation rules
+rules - view game rules
+quit - exit the game
+render - re-print the round text (Score, original text, transformed text)

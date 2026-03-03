@@ -1,0 +1,60 @@
+========================================
+                GAME RULES
+========================================
+
+INTRODUCTION
+------------
+
+Your original message has been corrupted by a sequence of text transformations!
+In order to successfully recover it, you must figure out which transformations 
+were applied and in what order.
+
+You know:
+  • The set of possible transformations
+  • The total number of transformations applied (N)
+
+You do NOT know:
+  • Which specific transformations were used
+  • The order in which they were applied
+
+You have N total guesses each game
+
+Your goal is to reverse all transformations
+and recover the original message.
+
+
+HOW TO PLAY
+-----------
+
+Each round:
+  1. Enter the number corresponding to the
+     transformation you believe was applied.
+  2. The game evaluates your guess.
+  3. One transformation is reversed.
+
+
+SCORING
+-------
+
+If your guess was:
+
+  • The most recent transformation applied:
+        +1 point
+        That transformation is reversed.
+
+  • A correct transformation, but not the most recent:
+        +0.5 points
+        Your chosen transformation is reversed.
+
+  • Not one of the applied transformations:
+        +0 points
+        The most recent transformation is reversed.
+
+
+GAME END
+--------
+
+The game ends after you make N guesses.
+
+Type "rules" to See this message again
+========================================
