@@ -14,8 +14,7 @@ You know:
   • The total number of transformations applied (N)
 
 You do NOT know:
-  • Which specific transformations were used
-  • The order in which they were applied
+  • The order in which transformations were applied
 
 You have N total guesses each game
 
@@ -42,11 +41,7 @@ If your guess was:
         +1 point
         That transformation is reversed.
 
-  • A correct transformation, but not the most recent:
-        +0.5 points
-        Your chosen transformation is reversed.
-
-  • Not one of the applied transformations:
+  • Otherwise:
         +0 points
         The most recent transformation is reversed.
 
@@ -55,6 +50,13 @@ GAME END
 --------
 
 The game ends after you make N guesses.
+
+Color Coding
+------------
+Each round, certain transformed characters will be color coded:
+  - Red - Character was swapped
+  - Blue - Word was merged
+  - Green - Word was swapped
 
 Type "rules" to See this message again
 ========================================
