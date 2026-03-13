@@ -25,7 +25,7 @@ mergeColor c1 c2
     | colorPriority c2 > colorPriority c1 = c2
     | otherwise = c1
 
--- Apply a color to every character, respecting existing higher-priority colors
+-- Apply a color to every character, enforcing color priority
 setColor :: Color -> ColoredText -> ColoredText
 setColor c = map (\(ch, existing) -> (ch, mergeColor existing c))
 
@@ -35,7 +35,7 @@ fromString = map (\c -> (c, NoColor))
 toString :: ColoredText -> String
 toString = map fst
 
--- Split ColoredText into words (sequences of non-space chars)
+-- Split ColoredText into words 
 coloredWords :: ColoredText -> [ColoredText]
 coloredWords [] = []
 coloredWords ct =
@@ -50,7 +50,7 @@ coloredUnwords [] = []
 coloredUnwords [w] = w
 coloredUnwords (w:ws) = w ++ [(' ', NoColor)] ++ coloredUnwords ws
 
--- Render ColoredText to a String with ANSI terminal color codes
+-- Render ColoredText to a String with terminal color codes
 renderColored :: ColoredText -> String
 renderColored ct = go ct NoColor
   where

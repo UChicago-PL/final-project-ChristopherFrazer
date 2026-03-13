@@ -1,9 +1,10 @@
+
 Transformation Rules:
 1. Shift
     - Each word has its letters shifted by a distinct amount. 
     - Think of these shifts as moving "forward" in the alphabet by the
     shift amount.
-    - ex. "Abc Xyz" shifted by [1,2] = "Bcd "
+    - ex. "Abc" shifted by = "Bcd"
 2. Character swap
     - Each word has at least one character swapped with a different word
     - Space characters are not swapped (Number of words and word length are unchanged)
